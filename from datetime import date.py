@@ -17,7 +17,12 @@ b = date(1999, 6, 6)
 years = b.year - a.year
 if b.month < a.month:
     years = years - 1
-months = b.month - a.month
-days = b.day - a.day 
+    months = (b.month+12) - a.month
+else:
+    months = b.month - a.month
+if b.day<a.day:
+    months=months-1
+    #b.day+=30
+    days = b.day - a.day 
 
 print('{0} years, {1} months, {2} days'.format(years, months, days))
