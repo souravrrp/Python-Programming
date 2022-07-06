@@ -1,7 +1,6 @@
 #Palindrome number
+"""
 from audioop import reverse
-
-
 str="WOW"
 print(str)
 
@@ -11,3 +10,7 @@ if str==rev:
     print("Palindrome")
 else:
     print("Not Palindrome")
+"""
+
+num = 123456
+print(str(num)[::-1])
